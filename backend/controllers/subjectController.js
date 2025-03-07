@@ -20,7 +20,7 @@ export const createSubject = async (req, res) => {
   }
 };
 
-//  Get all subject (Admin & Public)
+//  Get all subjects (Admin & Public)
 export const getAllSubjects = async (req, res) => {
   try {
     const subjects = await Subject.find().populate('resources').populate('tests');
