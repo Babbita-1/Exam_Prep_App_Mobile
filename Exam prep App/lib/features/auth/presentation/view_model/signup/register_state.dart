@@ -16,6 +16,7 @@ class RegisterState {
     this.imageName,
     this.errorMessage,
   });
+  //register state
 
   RegisterState.initial()
       : isLoading = false,
