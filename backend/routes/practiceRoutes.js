@@ -10,7 +10,7 @@ router.get('/test/:testId', protect, practiceController.getTestById);
 // Get test by subject (use subjectId)
 router.get('/subject/:subjectId', protect, practiceController.getTestsBySubject);
 
-// Fetch all tests (for guests)
+// Fetch all test (for guests)
 router.get('/all', practiceController.getAllTests);
 
 // Get all tests for Admin
