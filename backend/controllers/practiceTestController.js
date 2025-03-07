@@ -107,7 +107,7 @@ export const submitTest = async (req, res) => {
     console.log("Submitting test for ID:", testId);
     console.log("Received answers:", answers);
 
-    // Validate testId
+    // Validate test Id
     if (!testId || testId.length !== 24) {
       return res.status(400).json({ error: "Invalid test ID." });
     }
