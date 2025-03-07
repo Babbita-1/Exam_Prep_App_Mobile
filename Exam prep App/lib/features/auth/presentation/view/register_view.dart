@@ -118,7 +118,7 @@ class _RegisterViewState extends State<RegisterView> {
                   ),
                 );
 
-                // Navigate back to the login page after registration success
+                // Navigate back to the login page after registrations success
                 Future.delayed(const Duration(seconds: 2), () {
                   Navigator.pop(context);
                 });
