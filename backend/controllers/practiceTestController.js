@@ -38,7 +38,7 @@ export const getAllTests = async (req, res) => {
   }
 };
 
-// Get Test by ID
+
 export const getTestById = async (req, res) => {
   try {
     const { testId } = req.params;
