@@ -87,7 +87,7 @@ export const getTestsByGrade = async (req, res) => {
   }
 };
 
-//  Get Tests for a Subject
+//  Get Tests for a Subjects
 export const getTestsBySubject = async (req, res) => {
   try {
     const { subjectId } = req.params;
