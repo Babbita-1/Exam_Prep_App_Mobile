@@ -65,7 +65,7 @@ class _RegisterViewState extends State<RegisterView> {
       ),
       body: MultiBlocListener(
         listeners: [
-          // Listener for Image Upload
+          // Listener for Image Uploads
           BlocListener<RegisterBloc, RegisterState>(
             listenWhen: (previous, current) =>
                 previous.isImageLoading != current.isImageLoading ||
