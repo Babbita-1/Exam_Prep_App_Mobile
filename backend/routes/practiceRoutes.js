@@ -1,13 +1,13 @@
 import express from 'express';
-import { protect, adminOnly } from '../middleware/authMiddleware.js';
 import * as practiceController from '../controllers/practiceTestController.js';
+import { adminOnly, protect } from '../middleware/authMiddleware.js';
 
 const router = express.Router();
 
 // Get a single test by ID (for students/admins)
 router.get('/test/:testId', protect, practiceController.getTestById);
 
-// Get tests by subject (use subjectId)
+// Get test by subject (use subjectId)
 router.get('/subject/:subjectId', protect, practiceController.getTestsBySubject);
 
 // Fetch all tests (for guests)
