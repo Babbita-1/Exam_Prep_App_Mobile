@@ -1,15 +1,17 @@
-import 'package:flutter/material.dart';
-import 'home_screen.dart';
-import 'test_screen.dart';
-import 'learn_screen.dart';
-import 'profile_screen.dart';
-import 'package:sensors_plus/sensors_plus.dart';
-import 'package:proximity_sensor/proximity_sensor.dart';
 import 'dart:async';
 import 'dart:math';
 
+import 'package:flutter/material.dart';
+import 'package:proximity_sensor/proximity_sensor.dart';
+import 'package:sensors_plus/sensors_plus.dart';
+
+import 'home_screen.dart';
+import 'learn_screen.dart';
+import 'profile_screen.dart';
+import 'test_screen.dart';
+
 class Dashboard extends StatefulWidget {
-  const Dashboard({Key? key}) : super(key: key);
+  const Dashboard({super.key});
 
   @override
   State<Dashboard> createState() => _DashboardState();
@@ -17,6 +19,7 @@ class Dashboard extends StatefulWidget {
 
 class _DashboardState extends State<Dashboard> {
   int _selectedIndex = 0;
+  //dashboard
 
   // Sensor-related variables
   StreamSubscription<AccelerometerEvent>? _accelerometerSubscription;
