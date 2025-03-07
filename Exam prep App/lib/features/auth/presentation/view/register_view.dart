@@ -97,7 +97,7 @@ class _RegisterViewState extends State<RegisterView> {
               }
             },
           ),
-          // Listener for Student Registration
+          // Listener for Student Registrations
           BlocListener<RegisterBloc, RegisterState>(
             listenWhen: (previous, current) =>
                 previous.isLoading != current.isLoading ||
