@@ -20,7 +20,7 @@ export const createSubject = async (req, res) => {
   }
 };
 
-//  Get all subjects (Admin & Public)
+//  Get all subject (Admin & Public)
 export const getAllSubjects = async (req, res) => {
   try {
     const subjects = await Subject.find().populate('resources').populate('tests');
@@ -54,7 +54,7 @@ export const getSubjectsByGrade = async (req, res) => {
     if (!subjects.length) {
       return res.status(404).json({ error: 'No subjects found for this grade level' });
     }
-    
+
     res.json(subjects);
   } catch (error) {
     console.error("Error fetching subjects:", error);
