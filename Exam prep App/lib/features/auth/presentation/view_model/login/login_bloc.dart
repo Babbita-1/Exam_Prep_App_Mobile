@@ -39,7 +39,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
       );
     });
 
-    // Navigate to Home Screen (Previously used in Login)
+    // Navigate to Home Screens(Previously used in Login)
     on<NavigateHomeScreenEvent>((event, emit) {
       Navigator.pushReplacement(
         event.context,
