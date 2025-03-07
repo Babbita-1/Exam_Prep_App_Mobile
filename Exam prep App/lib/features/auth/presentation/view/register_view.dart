@@ -25,7 +25,7 @@ class _RegisterViewState extends State<RegisterView> {
 
   bool _isPasswordVisible = false;
 
-  // Checking for Runtime Camera Permission
+  // Checking for Runtime Camera Permissions
   checkCameraPermission() async {
     if (await Permission.camera.request().isRestricted ||
         await Permission.camera.request().isDenied) {
