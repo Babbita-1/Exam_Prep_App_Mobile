@@ -27,7 +27,7 @@ export const createTest = async (req, res) => {
   }
 };
 
-//  Admin: Get All Tests
+//  Admin: Get All Test
 export const getAllTests = async (req, res) => {
   try {
     const tests = await PracticeTest.find().populate('subjectId', 'name gradeLevel');
