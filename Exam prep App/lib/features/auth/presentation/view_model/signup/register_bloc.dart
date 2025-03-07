@@ -9,6 +9,7 @@ import '../../../domain/use_case/upload_image_usecase.dart';
 part 'register_event.dart';
 part 'register_state.dart';
 
+//registerbloc
 class RegisterBloc extends Bloc<RegisterEvent, RegisterState> {
   // final BatchBloc _batchBloc;
   // final WorkshopBloc _workshopBloc;
