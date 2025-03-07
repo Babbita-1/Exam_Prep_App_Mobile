@@ -1,10 +1,10 @@
-import User from '../models/User.js';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
+import User from '../models/User.js';
 
 const JWT_SECRET = process.env.JWT_SECRET || 'supersecretkey';
 
-// User Registration
+// User 
 export const registerUser = async (req, res) => {
   try {
     const { name, email, password, academicLevel, role } = req.body;
