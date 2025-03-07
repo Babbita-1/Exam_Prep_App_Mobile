@@ -7,6 +7,7 @@ import 'package:permission_handler/permission_handler.dart';
 
 import '../view_model/signup/register_bloc.dart';
 
+//register view
 class RegisterView extends StatefulWidget {
   const RegisterView({super.key});
 
