@@ -1,5 +1,4 @@
 import User from '../models/User.js';
-import bcrypt from 'bcryptjs';
 
 // Get User by ID
 export const getUserById = async (req, res) => {
@@ -7,14 +6,14 @@ export const getUserById = async (req, res) => {
     const { id } = req.params;
     const user = await User.findById(id).select('-password');
     if (!user) return res.status(404).json({ error: 'User not found' });
-    
+
     return res.json(user);
   } catch (error) {
     return res.status(500).json({ error: 'Server error' });
   }
 };
 
-// Get All Users (Admin Only)
+// Get All User(Admin Only)
 export const getAllUsers = async (req, res) => {
   try {
     if (req.user.role !== 'admin') {
