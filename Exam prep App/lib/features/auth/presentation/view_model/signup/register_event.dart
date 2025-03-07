@@ -16,6 +16,7 @@ class LoadImage extends RegisterEvent {
     required this.file,
   });
 }
+//register
 
 class RegisterUser extends RegisterEvent {
   final String name;
