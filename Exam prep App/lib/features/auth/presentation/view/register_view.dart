@@ -296,7 +296,7 @@ class _RegisterViewState extends State<RegisterView> {
                             return null;
                           },
                         ),
-                        const SizedBox(height: 12), // Spacing between fields
+                        const SizedBox(height: 12), // Spacing between field
                         TextFormField(
                           controller: _confirmPasswordController,
                           obscureText: !_isPasswordVisible,
