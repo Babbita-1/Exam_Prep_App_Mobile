@@ -70,7 +70,7 @@ export const getTestById = async (req, res) => {
   }
 };
 
-//  Get Tests by Grade
+//  Gets Tests by Grade
 export const getTestsByGrade = async (req, res) => {
   try {
     const { gradeLevel } = req.params;
