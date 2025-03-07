@@ -11,7 +11,6 @@ import '../signup/register_bloc.dart';
 part 'login_event.dart';
 part 'login_state.dart';
 
-//loginbloc
 class LoginBloc extends Bloc<LoginEvent, LoginState> {
   final RegisterBloc _registerBloc;
   final HomeCubit _homeCubit;
