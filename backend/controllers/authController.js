@@ -4,7 +4,7 @@ import User from '../models/User.js';
 
 const JWT_SECRET = process.env.JWT_SECRET || 'supersecretkey';
 
-// User 
+// User Registration
 export const registerUser = async (req, res) => {
   try {
     const { name, email, password, academicLevel, role } = req.body;
