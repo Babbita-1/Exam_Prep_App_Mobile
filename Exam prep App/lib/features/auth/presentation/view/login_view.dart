@@ -115,7 +115,8 @@ class LoginView extends StatelessWidget {
                                         email: email,
                                         password: password,
                                         context: context,
-                                        destination: DashboardView(),
+                                        destination:
+                                            DashboardView(), // Updated destination
                                       ),
                                     );
                               }
