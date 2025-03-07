@@ -112,7 +112,7 @@ export const submitTest = async (req, res) => {
       return res.status(400).json({ error: "Invalid test ID." });
     }
 
-    // Find the test
+    // Find the tests
     const test = await PracticeTest.findById(testId);
     if (!test) return res.status(404).json({ error: 'Practice test not found' });
 
