@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class LearnScreen extends StatelessWidget {
-  const LearnScreen({Key? key}) : super(key: key);
+  const LearnScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,6 +12,7 @@ class LearnScreen extends StatelessWidget {
         'color': Colors.pink.shade100,
         'topics': 8,
         'progress': 0.7
+        //learn
       },
       {
         'name': 'Physics',
@@ -278,8 +279,7 @@ class LearnScreen extends StatelessWidget {
 class SubjectDetailScreen extends StatelessWidget {
   final String subject;
 
-  const SubjectDetailScreen({Key? key, required this.subject})
-      : super(key: key);
+  const SubjectDetailScreen({super.key, required this.subject});
 
   @override
   Widget build(BuildContext context) {
@@ -447,8 +447,7 @@ class TopicDetailScreen extends StatelessWidget {
   final String topic;
 
   const TopicDetailScreen(
-      {Key? key, required this.subject, required this.topic})
-      : super(key: key);
+      {super.key, required this.subject, required this.topic});
 
   @override
   Widget build(BuildContext context) {
