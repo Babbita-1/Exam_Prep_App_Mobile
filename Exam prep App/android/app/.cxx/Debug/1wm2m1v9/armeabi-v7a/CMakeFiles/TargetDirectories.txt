@@ -1,0 +1,2 @@
+C:/Users/shisi/OneDrive/Desktop/babita/Mob App/Exam prep App/android/app/.cxx/Debug/1wm2m1v9/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/shisi/OneDrive/Desktop/babita/Mob App/Exam prep App/android/app/.cxx/Debug/1wm2m1v9/armeabi-v7a/CMakeFiles/rebuild_cache.dir
