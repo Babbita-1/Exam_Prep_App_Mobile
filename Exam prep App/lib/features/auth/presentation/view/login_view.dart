@@ -5,6 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../view_model/login/login_bloc.dart';
 import 'register_view.dart';
 
+//login view
 class LoginView extends StatelessWidget {
   LoginView({super.key});
 
