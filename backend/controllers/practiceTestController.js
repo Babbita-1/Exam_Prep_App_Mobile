@@ -98,7 +98,7 @@ export const getTestsBySubject = async (req, res) => {
   }
 };
 
-//  Submit Test Attempt
+//  Submit Test Attempts
 export const submitTest = async (req, res) => {
   try {
     const { testId } = req.params;
