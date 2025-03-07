@@ -13,7 +13,7 @@ export const getUserById = async (req, res) => {
   }
 };
 
-// Get All User(Admin Only)
+// Get All Users (Admin Only)
 export const getAllUsers = async (req, res) => {
   try {
     if (req.user.role !== 'admin') {
