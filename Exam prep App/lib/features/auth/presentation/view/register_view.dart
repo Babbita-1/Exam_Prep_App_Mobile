@@ -42,7 +42,7 @@ class _RegisterViewState extends State<RegisterView> {
         setState(() {
           _img = File(photo.path);
 
-          // Send File to server
+          // Send File to servers
           context.read<RegisterBloc>().add(LoadImage(file: _img!));
         });
       } else {
